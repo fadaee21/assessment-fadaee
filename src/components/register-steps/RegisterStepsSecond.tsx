@@ -79,7 +79,13 @@ const RegisterStepsSecond = ({
         variant="contained"
         type="submit"
         fullWidth
-        disabled={!user?.newsletter || !user?.email || loading}
+        disabled={
+          !user?.newsletter ||
+          !user?.email ||
+          !user?.name ||
+          !user?.age ||
+          loading
+        }
       >
         {loading ? "Loading..." : "submit"}
       </Button>
