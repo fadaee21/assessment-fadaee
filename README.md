@@ -1,27 +1,17 @@
-# React + TypeScript + Vite
+# Sheypoor Frontend Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Overview
+This repository contains the frontend code for the Sheypoor frontend-challenge project. The project consists of four main pages: Home, Register, New User, and Not Found, along with a layout that includes a header.
 
-Currently, two official plugins are available:
+### Pages
+Home
+The Home page serves as the landing page for the application. It provides information about the platform and its features.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Register
+The Register page is a two-step process, customized with shallow routing. Users are required to fill in their name, age, newsletter subscription preference, and email, which are all compulsory fields. Upon submission, the user can view the response of the createUser API as a JSON format.
 
-## Expanding the ESLint configuration
+New User
+The New User page is designed to display information about a newly registered user. However, the specifics of this page's functionality and content are not provided in the current project description.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Not Found (404 Page)
+The Not Found page is shown when a user attempts to access a non-existent or unavailable route. It helps to improve user experience by guiding them back to the valid pages.

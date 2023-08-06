@@ -14,11 +14,12 @@ const Register = () => {
   });
   const [searchParams, setSearchParams] = useSearchParams({ step: "1" });
 
+  // Update the user state with the new input value
   const handleChangeRegister = useCallback((e: InputChangeEvent): void => {
     const { name, value } = e.target;
     setUser((prevVal) => ({ ...prevVal, [name]: value }));
   }, []);
-
+// Handles the select change event for selecting the newsletter
   const handleSelect = useCallback((e: SelectChangeEvent) => {
     setUser((prevUser) => ({
       ...prevUser,
