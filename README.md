@@ -5,7 +5,7 @@ This repository contains the frontend code for the Sheypoor frontend-challenge p
 
 ### Pages
  - Home: 
-The Home page serves as the landing page for the application. It provides information about the platform and its features.
+The Home page serves as the landing page for the application.
 
  - Register: 
 The Register page is a two-step process, customized with shallow routing. Users are required to fill in their name, age, newsletter subscription preference, and email, which are all compulsory fields. Upon submission, the user can view the response of the createUser API as a JSON format.
